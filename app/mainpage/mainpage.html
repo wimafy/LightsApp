@@ -1,0 +1,27 @@
+<div style="background-color: #EEEEEE; height:100vh; width: 100vw; position: absolute;">
+  <h1>Main Page</h1>
+
+  <a ui-sref="newproject">
+    <md-button class="md-fab md-primary" id="mainpageNewProjectPlusButton" aria-label="New Project">
+      <i class="material-icons" id="mainpageNewProjectPlus">&#xE145;</i>
+    </md-button>
+  </a>
+
+  <div layout="center center" layout-wrap>
+    <md-card style="width: 400px;" ng-repeat="project in mainpageCtrl.projects track by $index">
+      <div style="background-color: {{ project.colorhash }}; height: 150px; width: 400px">
+        <h1 class="mainpageProjectTitle">{{ project.name}}</h1>
+      </div>
+      <md-card-content>
+        <h2 style="margin-bottom: -5px;">Creator: {{ project.creator }}</h2>
+        <p>Description: {{ project.description }}</p>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button class="md-warn md-raised md-hue-2">Present</md-button>
+        <md-button class="md-raised md-primary">Edit</md-button>
+      </div>
+    </md-card>
+  </div>
+
+
+</div>
