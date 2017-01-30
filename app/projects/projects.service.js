@@ -1,6 +1,9 @@
 angular.module('angularfireSlackApp')
   .factory('projects', function($firebaseArray){
-    var ref = firebase.database().ref('projects');
+
+    var user = firebase.auth().currentUser.uid
+
+    var ref = firebase.database().ref('/Projects/' + user);
     var projects = $firebaseArray(ref);
 
     return projects;
