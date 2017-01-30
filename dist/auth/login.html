@@ -1,0 +1,22 @@
+<!--
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <h1><a ui-sref="home"><img class="logo-img" src="images/logo.5766c264.png" /></a> Log In</h1>
+  </div>
+
+  <div ng-show="authCtrl.error">
+    <span>{{ authCtrl.error.message }}</span>
+  </div>
+
+  <form ng-submit="authCtrl.login()">
+    <div class="input-group">
+      <input type="email" class="form-control" placeholder="Email" ng-model="authCtrl.user.email">
+    </div>
+    <div class="input-group">
+      <input type="password" class="form-control" placeholder="Password" ng-model="authCtrl.user.password">
+    </div>
+    <input type="submit" class="btn btn-default" value="Log In">
+  </form>
+</div>
+--> <div style="background-color: #EEEEEE; height:100vh; width: 100vw; position: absolute"> <img class="logo-img" src="images/lightSyncLogo.bc27f005.png" style="width: 40vw; margin: 10vh 100vw 15px 10vw; max-height: 90px; max-width: 400px; float: left"> <a ui-sref="register" style="text-decoration: none; color: black; position:absolute; right: 14vw; top: calc(10vh + 55px); font-size: 27px">Register</a> <md-content class="md-padding" layout="row" layout-align="center center" style="background-color: #EEEEEE"> <md-card flex="70"> <md-card-content> <h1 class="md-display-3" style="text-align: center; margin-bottom: 40px; color: #505050; margin-top:15px">Sign In</h1> <div layout="row" layout-align="center center" style="margin-top:10px"> <md-button class="md-raised" flex="30" style="height: 70px; background-color: #1976d2; font-size:42px; color:white"> <i class="fa fa-facebook-f"></i> </md-button> <md-button class="md-raised" flex="30" style="height: 70px; background-color: #f44336; font-size:42px; color:white"> <i class="fa fa-google"></i> </md-button> <md-button class="md-raised" flex="30" style="height: 70px; background-color: #64b5f6; font-size:42px; color:white"> <i class="fa fa-twitter"></i> </md-button> </div> <form ng-submit="authCtrl.login()"> <div layout="column"> <span layout="row" style="margin-top: 80px"> <i class="material-icons" style="font-size: 55px; line-height: 40px; text-align: center; color: #505050" flex="10">person</i> <md-input-container class="md-display-1" flex="90"> <label style="color:#505050">Email</label> <input type="email" class="form-control" ng-model="authCtrl.user.email" style="height: 60px; margin-top: -12px"> </md-input-container> </span> <span layout="row" style="margin-top: 40px"> <i class="material-icons" style="font-size: 55px; line-height: 40px; text-align: center; color: #505050" flex="10">lock</i> <md-input-container class="md-display-1" flex="90"> <label style="color:#505050">Password</label> <input type="password" class="form-control" ng-model="authCtrl.user.password" style="height: 60px; margin-top: -12px"> </md-input-container> </span> </div> <div layout="row" layout-align="center center"> <md-button type="submit" class="md-raised" flex="100" style="height: 60px; background-color: #00acff; font-size:30px; color:white; margin-top: 30px; margin-bottom: 30px"> Sign in </md-button> </div> </form> </md-card-content> </md-card> </md-content> </div> 
